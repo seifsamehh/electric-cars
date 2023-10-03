@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^4.24.0",
     "autoprefixer": "10.4.15",
     "embla-carousel-autoplay": "^8.0.0-rc11",
     "embla-carousel-react": "^8.0.0-rc11",

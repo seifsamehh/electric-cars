@@ -1,5 +1,4 @@
 import Script from "next/script";
-import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 import { Rajdhani } from "next/font/google";
 
@@ -135,26 +134,24 @@ export const metadata = {
 // + */
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
-      <html lang="en">
-        <body className={rajdhani.className}>
-          {children}
-          <Script
-            id="shortcuts"
-            src="/shortcuts.js"
-            defer
-            rel="preload"
-            as="script"
-          />
-          <Script
-            id="disable click"
-            src="/click.js"
-            defer
-            rel="preload"
-            as="script"
-          />
-        </body>
-      </html>
-    </ClerkProvider>
+    <html lang="en">
+      <body className={rajdhani.className}>
+        {children}
+        <Script
+          id="shortcuts"
+          src="/shortcuts.js"
+          defer
+          rel="preload"
+          as="script"
+        />
+        <Script
+          id="disable click"
+          src="/click.js"
+          defer
+          rel="preload"
+          as="script"
+        />
+      </body>
+    </html>
   );
 }

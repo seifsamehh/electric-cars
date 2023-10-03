@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { UserButton } from "@clerk/nextjs";
 import dynamic from "next/dynamic";
 const Mobile = dynamic(() => import("@/components/Mobile"));
 import "../styles/header.scss";
@@ -69,7 +68,6 @@ const Header = () => {
             >
               Sign Up
             </Link>
-            <UserButton afterSignOutUrl="/" />
             <label className="swap swap-rotate" htmlFor="theme-switch">
               {/* this hidden checkbox controls the state */}
               <input
