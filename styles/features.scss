@@ -1,0 +1,17 @@
+.features {
+  .bottom {
+    .feature-box {
+      position: relative;
+      background-image: url("/bbblurry.svg");
+      background-position: center 60%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 2rem 1rem;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

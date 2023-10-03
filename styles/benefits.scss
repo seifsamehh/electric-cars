@@ -1,0 +1,34 @@
+//start global varibales
+$light: #faf4f4;
+$dark: #1e1e1e;
+$main-color: #cdff49;
+//end global varibales
+.benefits {
+  background-image: url("../public/BenefitsBbblurry.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .box {
+    color: $light;
+    position: relative;
+    z-index: 3;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $main-color;
+      border-radius: 0.5rem;
+      transition: 0.3s;
+      z-index: -1;
+    }
+    &:hover {
+      color: $dark;
+    }
+    &:hover::before {
+      height: 100%;
+    }
+  }
+}

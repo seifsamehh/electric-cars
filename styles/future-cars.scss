@@ -1,0 +1,32 @@
+//start global varibales
+$light: #faf4f4;
+$dark: #1e1e1e;
+$main-color: #cdff49;
+//end global varibales
+.future-cars {
+  background-image: url("../public/futureBg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  background-attachment: fixed;
+  @media screen and (max-width: 768px) {
+    background-image: none;
+  }
+  .bottom {
+    .boxs {
+      .box {
+        position: relative;
+        transition: 0.3s;
+        &:hover {
+          background-color: $light;
+          color: $dark;
+        }
+        img {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+//start global varibales
+$light: #faf4f4;
+$dark: #1e1e1e;
+$main-color: #cdff49;
+//end global varibales
+//start global components
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  overflow-x: hidden;
+}
+a,
+img,
+video,
+button,
+h1,
+h2 {
+  user-select: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  outline: none;
+}
+.loader-page {
+  background-image: url("/bbblurry.svg");
+  background-position: center 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+::selection {
+  background-color: $main-color;
+  color: $dark;
+}
+.dark {
+  .future-cars {
+    .bottom {
+      .boxs {
+        .box {
+          &:hover {
+            background-color: $dark;
+            color: $light;
+          }
+        }
+      }
+    }
+  }
+  .benefits {
+    .box {
+      color: $dark;
+    }
+  }
+}
+//end global components

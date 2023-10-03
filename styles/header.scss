@@ -1,0 +1,28 @@
+//start global varibales
+$main-color: #cdff49;
+//end global varibales
+header {
+  background-color: rgba(30, 30, 30, 0.5);
+  backdrop-filter: blur(2px);
+  .right {
+    .links {
+      a {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0%;
+          height: 3px;
+          border-radius: 10px;
+          background-color: $main-color;
+          transition: 0.3s;
+        }
+        &:hover::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
